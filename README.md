@@ -1,2 +1,1 @@
-# Galvanize
-Testing things
+Galvanize
