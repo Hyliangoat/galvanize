@@ -1,0 +1,14 @@
+.bash_history
+.cache/
+.dotnet/
+.gitconfig
+.gitignore/
+.landscape/
+.local/
+.motd_shown
+.npm/
+.nvm/
+.ssh/
+.sudo_as_admin_successful
+.vscode-server/
+.wget-hsts
