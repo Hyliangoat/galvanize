@@ -311,6 +311,21 @@
 // console.log(callEm(otherAnimals))
 
 
+// let object = {
+//     name: "bob",
+//     address: 'billytown',
+//     phone: 555555555,
+//     email: 'emailemailemail'
+// }
+
+// const stringifyContact = (parameter) => {
+// 	let {name, address, phone, email} = parameter;
+// 	return `${name}, ${address}, ${phone}, ${email}`;
+// }
+
+// console.log(stringifyContact(object))
+
+
 //--------------------------------Default Parameters---------------------------------//
 
 // function greetings(user = 'handsome') {
@@ -385,6 +400,9 @@
 // console.log(count)
 // console.log(reduced)
 
+//------------------------------------Chaining Them-----------------------------------//
+//num => typeof numb === 'number num => num * 2'
+
 
 //-----------------------------------------Document Object Management-----------------//
 
@@ -441,3 +459,64 @@
 // <button>Click me</button>
 // `
 
+
+//--------------------Events--------------------//
+//let btn = document.querySelector("#button1");
+
+//btn.addEventListener("click", () => alert('Don\'t touch me, peasant'));
+
+//Or
+// const myClickFunction = () => {
+//   alert('HANDS OFF, WEIRDO');
+// }
+
+// btn.addEventListener("click", myClickFunction);
+
+//----Event objects-----//
+
+//Fun lil typer into the console thing
+// let nameField = document.querySelector('#name');
+
+// nameField.addEventListener(
+//     "input", 
+//     (eventObject) => console.log(eventObject.target.value)
+// );
+
+//Having the alert show what the user typed into the input box, use preventDefault() to stop screen reloading after a submission
+// let nameField = document.querySelector('#name');
+
+// let userInput = "";
+
+// nameField.addEventListener("input", (eventObject) => {
+//     userInput = eventObject.target.value
+// }); 
+
+// let btn = document.querySelector('#button1');
+
+// btn.addEventListener("click", () => alert(userInput));
+
+//--Removing something after it was pushed once--
+// const someAlert = () => {
+//   alert("I was clicked")
+// }
+
+// document.querySelector('#button1').addEventListener('click', someAlert)
+
+// document.querySelector('#button1').addEventListener('click', () => {
+//   document.querySelector('#button1').removeEventListener('click', someAlert);
+// });
+
+//---------Recursion---------//
+    // let countUp = (count) => {
+        
+        
+    // if(count < 1){
+    //     return [0]
+    // } else{
+    //     const array = countUp(count-1) //enters array, keeps going until it hits 0, returns zero, then pushes it, then pushes the [1], etc
+        
+    //     array.push(count)
+        
+    //     return array
+    // }
+    // };
